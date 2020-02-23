@@ -14,21 +14,20 @@ import (
 	flstd "compress/flate"
 	gzstd "compress/gzip"
 
-	"github.com/biogo/hts/bgzf"
+	bgzf "github.com/biogo/hts/bgzf"
 	flkp "github.com/klauspost/compress/flate"
 	gzkp "github.com/klauspost/compress/gzip"
-	"github.com/klauspost/compress/zstd"
+	zstd "github.com/klauspost/compress/zstd"
 	pgz "github.com/klauspost/pgzip"
-	clzma "github.com/remyoudompheng/go-liblzma"
+	lz4 "github.com/pierrec/lz4"
 	gxz "github.com/ulikunitz/xz/lzma"
 
-	"github.com/pierrec/lz4"
 	clz4 "github.com/pwaller/go-clz4"
+	clzma "github.com/remyoudompheng/go-liblzma"
+	cgzip "github.com/youtube/vitess/go/cgzip"
 
 	"github.com/golang/snappy"
 	"github.com/klauspost/readahead"
-
-	"github.com/youtube/vitess/go/cgzip"
 )
 
 type NoOp struct{}
